@@ -75,3 +75,17 @@ a:visited {
   color: red;
   text-decoration: line-through;
 }
+
+/* Pseudo-elements */
+.emojify::before {
+  content: "😎 🥸 🤓";
+}
+
+.emojify::after {
+  content: "🤓 🥸 😎";
+}
+
+.first-letter::first-letter {
+  font-size: 2rem;
+  color: blue;
+}
