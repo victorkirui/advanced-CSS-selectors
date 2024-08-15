@@ -46,6 +46,12 @@ a:visited {
   text-decoration: underline;
 }
 
+/* Match elements that have no children at all */
+.container > div:empty {
+  border: 2px solid black;
+  height: 50px;
+}
+
 .para:nth-child(2) {
   color: blue;
 }
