@@ -27,3 +27,45 @@ main > div > div {
 .group1 ~ div {
   font-size: 3rem;
 }
+
+/* //Pseudo-class selector */
+
+/* Targets all links */
+a:link {
+  color: green;
+}
+
+/* Links on hover state */
+a:hover {
+  font-size: 2rem;
+}
+
+/* links when visited */
+a:visited {
+  color: red;
+  text-decoration: underline;
+}
+
+.para:nth-child(2) {
+  color: blue;
+}
+.para:first-child {
+  color: blueviolet;
+}
+.para:last-child {
+  color: brown;
+}
+.para:nth-child(odd) {
+  font-size: 1.3rem;
+  font-style: italic;
+}
+.para:nth-child(even) {
+  background-color: #bdb3b3;
+}
+
+/* Selects every 5th element */
+.para:nth-child(5n) {
+  font-weight: bold;
+  color: red;
+  text-decoration: line-through;
+}
