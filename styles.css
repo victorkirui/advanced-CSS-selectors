@@ -1,0 +1,29 @@
+main div {
+  color: red;
+}
+
+/* This rule will only select the divs with the class child */
+main > div {
+  color: blue;
+}
+
+/* This rule will only select the divs with the class grand-child */
+main > div > div {
+  color: green;
+}
+
+/* This rule will only select the div with the class child group2 */
+.group1 + div {
+  background-color: aqua;
+}
+
+/* This rule will only select the div with the class child group3 */
+.group1 + div + div {
+  background-color: black;
+  color: white;
+}
+
+/* This rule will select all of .group1's siblings - in this case the 2nd and 3rd .child divs */
+.group1 ~ div {
+  font-size: 3rem;
+}
